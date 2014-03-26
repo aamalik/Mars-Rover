@@ -1,0 +1,30 @@
+/**
+ * @file Parser.hh
+ * @brief The header of the static Parser class
+ */
+
+ // System includes
+ #include <iostream>
+ #include <fstream>
+ #include <string>
+ #include <vector>
+ #include <map>
+
+ // Local includes
+ #include "Brain.hh"
+ #include "ArgumentType.hh"
+
+ class Parser {
+
+ public:
+ 	static int parseFile(Brain** brainptr, std::string brainfile, int arguments);
+ 	static int parseImmediate(void* value, ArgumentType* type, std::string imed);
+<<<<<<< .mine
+ //	static int getTypeImmediate(ArgumentType* type, std::string imed);
+=======
+        static bool readLine(vector<string> &out,string line);
+   static bool isSpace(char c);
+   static bool isLabel(string str);
+>>>>>>> .r2470
+ 	
+ };
